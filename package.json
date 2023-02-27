@@ -11,7 +11,7 @@
         "help": "bin/log.js --help",
         "version": "bin/log.js -V",
         "test": "mocha",
-        "clean": "rm -f *.js"
+        "clean": "rm -f *.js test/data/logged*.js"
     },
     "dependencies": {
         "acorn": "^8.8.2",
