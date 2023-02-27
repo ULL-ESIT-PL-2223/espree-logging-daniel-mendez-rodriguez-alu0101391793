@@ -7,7 +7,10 @@
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "fill": "your scripts here"
+        "run": "bin/log.js",
+        "help": "bin/log.js --help",
+        "version": "bin/log.js -V",
+        "test": "mocha"
     },
     "dependencies": {
         "acorn": "^8.8.2",
