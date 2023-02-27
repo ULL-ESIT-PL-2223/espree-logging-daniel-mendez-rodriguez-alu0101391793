@@ -36,5 +36,3 @@ for (let i = 0; i < Test.length; i++) {
     console.log = oldLog;
   });
 }
-
-
