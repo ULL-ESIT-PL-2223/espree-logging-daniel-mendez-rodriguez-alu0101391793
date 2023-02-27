@@ -1,16 +1,17 @@
 {
     "name": "espree-logging-solution",
-    "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+    "author": "Daniel Mendez Rodriguez <alu0101391793@ull.edu.es>",
     "description": "Adds logs to javascript code",
     "type": "module",
     "bin": {
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "run": "bin/log.js",
+        "log": "bin/log.js",
         "help": "bin/log.js --help",
         "version": "bin/log.js -V",
-        "test": "mocha"
+        "test": "mocha",
+        "clean": "rm -f *.js"
     },
     "dependencies": {
         "acorn": "^8.8.2",
@@ -20,7 +21,7 @@
         "estraverse": "^5.2.0",
         "underscore": "^1.12.0"
     },
-    "version": "0.3.0",
+    "version": "0.3.1",
     "devDependencies": {
         "mocha": "^10.2.0"
     }
