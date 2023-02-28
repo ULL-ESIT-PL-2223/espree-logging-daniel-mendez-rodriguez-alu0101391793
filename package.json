@@ -11,6 +11,7 @@
         "help": "bin/log.js --help",
         "version": "bin/log.js -V",
         "test": "mocha",
+        "cov": "nyc npm run test",
         "clean": "rm -f *.js test/data/logged*.js"
     },
     "dependencies": {
@@ -19,6 +20,7 @@
         "escodegen": "^2.0.0",
         "espree": "^9.4.1",
         "estraverse": "^5.2.0",
+        "nyc": "^15.1.0",
         "underscore": "^1.12.0"
     },
     "version": "1.0.0",
