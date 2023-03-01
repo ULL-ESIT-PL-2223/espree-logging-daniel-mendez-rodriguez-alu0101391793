@@ -4,7 +4,9 @@ import * as estraverse from "estraverse";
 import * as fs from "fs/promises";
 
 /**
- * 
+ * Transforms the given JS code by adding logging statements at the beggining
+ * of each function and writes the result to the given file or prints it to
+ * the console if no output file is specified
  * @param { string } inputFile The file containing the JS code to be 
  * transformed
  * @param { string } outputFile The file to write the logged JS code to
@@ -26,7 +28,7 @@ export async function transpile(inputFile, outputFile) {
  * Returns the resulting JS code with logging statements added at the beggining
  * of each function
  * @param { string } code The input JS code to be transformed
- * @returns The resulting JS code with logging statements added
+ * @returns { string } The resulting JS code with logging statements added
  */
 export function addLogging(code) {
   const ast = espree.parse(code, { ecmaVersion: 6, loc: true });
@@ -45,7 +47,7 @@ export function addLogging(code) {
 /**
  * Transforms the given node of the AST to add a logging statement at the
  * beggining of the function it represents
- * @param { * } node The node of the AST to be edited
+ * @param { estraverse.NodeType } node The node of the AST to be edited
  */
 function addBeforeCode(node) {
   const name = node.id ? node.id.name : '<anonymous function>';

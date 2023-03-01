@@ -1,5 +1,5 @@
 {
-    "name": "espree-logging-solution",
+    "name": "@alu0101391793/espree-logging",
     "author": "Daniel Mendez Rodriguez <alu0101391793@ull.edu.es>",
     "description": "Adds logs to javascript code",
     "type": "module",
@@ -15,6 +15,7 @@
         "clean": "rm -f *.js test/data/logged*.js"
     },
     "dependencies": {
+        "@alu0101391793/espree-logging": "^1.1.0",
         "acorn": "^8.8.2",
         "commander": "^10.0.0",
         "escodegen": "^2.0.0",
@@ -24,7 +25,7 @@
         "nyc": "^15.1.0",
         "underscore": "^1.12.0"
     },
-    "version": "1.0.0",
+    "version": "1.2.0",
     "devDependencies": {
         "jsdoc-to-markdown": "^8.0.0",
         "mocha": "^10.2.0"
